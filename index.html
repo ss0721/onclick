@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Plug on, off</title>
+
+	<style type="text/css">
+
+	@font-face { font-family: 'DungGeunMo'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/DungGeunMo.woff') format('woff'); font-weight: normal; font-style: normal; }
+
+		h1{top: 150px; left: 300px;}
+		body{margin: 0; background: black;  margin-bottom: 50px;}
+		p{font-family: 'DungGeunMo'; position: relative;}
+		.wrap{background: white; width: 1200px; height: 740px; margin: auto; overflow: hidden;}
+		#off1{width: 1300px; height: auto; position: absolute;}
+		#off2{width: 1300px; height: auto; position: absolute;}
+		#off3{width: 1300px; height: auto; position: absolute;}
+		#off4{width: 1300px; height: auto; position: absolute;}
+
+		#plug1{width: 175px; height: auto; position: relative; top: 130px; right: -873px; opacity:1; z-index: 5;}
+		#plug2{width: 175px; height: auto; position: relative; top: 254px; right: -693px;opacity:1; z-index: 4;}
+		#plug3{width: 175px; height: auto; position: relative; top: 378px; right: -512px; opacity:1; z-index: 3;}
+		#plug4{width: 175px; height: auto; position: relative; top: 502px; right: -331px; opacity:1; z-index: 2;}
+
+		#on1{width: 1300px; height: auto; position: relative; top: -100px; opacity:0;}
+		#on2{width: 1300px; height: auto; position: relative; top: -835px; opacity:0;} 
+		#on3{width: 1300px; height: auto; position: relative; top: -1570px; opacity:0;}
+		#on4{width: 1300px; height: auto; position: relative; top: -2305px; opacity:0;}
+
+		#tv{position: absolute; top: 300px; left: 450px; opacity:0; z-index: 5;}
+		#tvi{position: absolute; width: 300px; opacity: 0; top: 340px; left: 460px;}
+
+		#cp1{position: absolute; width: 500px; top: 150px; left: 400px; opacity:0; z-index: 5;}
+		#cp2{position: absolute; width: 240px; height: 200px; top: 250px; left: 575px; opacity:0; z-index: 4;}
+
+		#fan{position: absolute; top: 205px; left: 313px; opacity:0; }
+
+		#fff{position: absolute; top: 180px; left: 450px; opacity:0; }
+
+		#mp1{position: absolute; opacity: 0;}
+		#mp2{position: absolute; opacity: 0;}
+		#mp3{position: absolute; opacity: 0;}
+		#mp4{position: absolute; opacity: 0;}
+
+		@keyframes li{ from{top:10px;} to{ left: -50px; }  }
+		@keyframes lo{ to{transform: rotate(25deg);}}
+
+	</style>
+
+</head>
+
+<body id="mybody">
+	<audio id="s1">
+		<source src="s1.mp3" type="audio/ogg"></audio>
+	<audio id="s2">
+		<source src="s2.mp3" type="audio/ogg"></audio>
+	<audio id="s3">
+		<source src="s3.mp3" type="audio/ogg"></audio>
+	<audio id="s4">
+		<source src="s4.mp3" type="audio/ogg"></audio>
+
+	<div class="wrap">
+		<h1 style="position: absolute; font-family: 'DungGeunMo'; font-size: 50px;
+		animation: lo 2s infinite cubic-bezier(.11,.53,1,-0.07) alternate;
+		" id="turn1">Plug on, off !</h1>
+
+		<div style="background: black; height: 50px; width: 1400px; position: absolute; top: 0; left: 0; z-index: 9;"></div>
+
+	<div id="mp1">
+		<p style="font-size: 30px; top: 100px; left: 500px;">티비를 보는건 즐거워!</p>
+		<p style="font-size: 40px; top: 180px; left: 50px;">리모컨 가져와라!!!!</p>
+	</div>
+
+	<div id="mp2">
+		<p style="font-size: 50px; top: 50px; left: 300px;">COMPUTER IS MY life..☆</p>
+		<p style="font-size: 30px; top: 480px; left: 800px;">컴퓨타~</p>
+		<p style="font-size: 30px; top: 120px; left: 50px; z-index: 7;">내가 할꺼야 저리 비켜!!!</p>
+	</div>
+
+	<div id="mp3">
+		<p style="font-size: 50px; top: 50px; left: 200px; z-index: 7; color: grey;">세상, 잘 돌아가는건 선풍기뿐.</p>
+		<p style="font-size: 40px; top: 30px; left: 100px; color: red; z-index: 7;">세상, 잘 돌아가는건 선풍기뿐.</p>
+		<p style="font-size: 50px; top: 300px; left: 200px; color: yellow;">세상, 잘 돌아가는건 선풍기뿐.</p>
+		<p style="font-size: 20px; top: 300px; left: 250px; color: pink;z-index: 7;">세상, 잘 돌아가는건 선풍기뿐.</p>
+		<p style="font-size: 30px; top: 120px; left: 10px; z-index: 7;">탍랕랕랄ㄾㄾ탈ㅊ타ㅏㅏ</p>
+	</div>
+
+	<div id="mp4">
+		<p style="font-size: 40px; top: 90px; left: 480px;">열려라 참꺠@#$!!</p>
+		<p style="font-size: 30px; top: 180px;left: 40px; z-index: 7; color: red;">여름엔 냉장고 문 열었다 닫기.</p>
+		<p style="font-size: 25px; top: 420px;left: 520px; z-index: 7; color: yellow;">ㄲ햐나얻히잗허ㅣㅏㅣㄴㅇㅎ</p>
+	</div>
+
+		<img src="./off1.png" id="off1">
+		<img src="./off2.png" id="off2">
+		<img src="./off3.png" id="off3">
+		<img src="./off4.png" id="off4">
+
+		<img src="./plug.png" id="plug1">
+		<img src="./plug.png" id="plug2">
+		<img src="./plug.png" id="plug3">
+		<img src="./plug.png" id="plug4">
+
+		<img src="./on1.png" id="on1">
+		<img src="./on2.png" id="on2">
+		<img src="./on3.png" id="on3">
+		<img src="./on4.png" id="on4">
+
+		<img src="./tv.png" id="tv">
+		<img src="./tvi.gif" id="tvi">
+
+		<img src="./cp1.png" id="cp1">
+		<img src="./cp2.gif" id="cp2">
+
+		<img src="./fan.gif" id="fan">
+
+		<img src="./fff.gif" id="fff">
+
+		<div style="height: 50px; position: relative; top: -2350px; background: black; color: white; font-family: 'DungGeunMo'; padding-top: 20px; margin: 0;">
+			<p style="text-align: center; font-size: 30px; margin: 0;">copyright SONSEOYEON</p></div>
+
+		</div>
+
+		<script type="text/javascript">
+			plug1.onclick = function(){
+				off1.style.opacity = "0";
+				off2.style.opacity = "1";
+				off3.style.opacity = "1";
+				off4.style.opacity = "1";
+
+				plug1.style.opacity = "0";
+				plug2.style.opacity = "0";
+				plug3.style.opacity = "0";
+				plug4.style.opacity = "0";
+
+				on1.style.opacity = "1";
+				on2.style.opacity = "0";
+				on3.style.opacity = "0";
+				on4.style.opacity = "0";
+
+				turn1.style.opacity = "0";
+
+				cp1.style.opacity = "0";
+				cp2.style.opacity = "0";
+				tv.style.opacity = "1";
+				tvi.style.opacity = "1";
+				fan.style.opacity = "0";
+				fff.style.opacity = "0";
+
+				mp1.style.opacity = "1";
+				mp2.style.opacity = "0";
+				mp3.style.opacity = "0";
+				mp4.style.opacity = "0";
+				s1.play();
+
+			}	
+
+			plug2.onclick = function(){
+				off1.style.opacity = "1";
+				off2.style.opacity = "0";
+				off3.style.opacity = "1";
+				off4.style.opacity = "1";
+
+				plug1.style.opacity = "0";
+				plug2.style.opacity = "0";
+				plug3.style.opacity = "0";
+				plug4.style.opacity = "0";
+
+				cp1.style.opacity = "1";
+				cp2.style.opacity = "1";
+				tv.style.opacity = "0";
+				tvi.style.opacity = "0";
+				fan.style.opacity = "0";
+				fff.style.opacity = "0";
+
+				turn1.style.opacity = "0";
+
+				on1.style.opacity = "0";
+				on2.style.opacity = "1";
+				on3.style.opacity = "0";
+				on4.style.opacity = "0";
+
+				mp1.style.opacity = "0";
+				mp2.style.opacity = "1";
+				mp3.style.opacity = "0";
+				mp4.style.opacity = "0";
+
+				s2.play();
+			}	
+
+			plug3.onclick = function(){
+				off1.style.opacity = "1";
+				off2.style.opacity = "1";
+				off3.style.opacity = "0";
+				off4.style.opacity = "1";
+
+				plug1.style.opacity = "0";
+				plug2.style.opacity = "0";
+				plug3.style.opacity = "0";
+				plug4.style.opacity = "0";
+
+				on1.style.opacity = "0";
+				on2.style.opacity = "0";
+				on3.style.opacity = "1";
+				on4.style.opacity = "0";
+	
+				turn1.style.opacity = "0";
+
+				cp1.style.opacity = "0";
+				cp2.style.opacity = "0";
+				tv.style.opacity = "0";
+				tvi.style.opacity = "0";
+				fan.style.opacity = "1";
+				fff.style.opacity = "0";
+
+				mp1.style.opacity = "0";
+				mp2.style.opacity = "0";
+				mp3.style.opacity = "1";
+				mp4.style.opacity = "0";
+
+				s3.play();
+			}	
+
+			plug4.onclick = function(){
+				off1.style.opacity = "1";
+				off2.style.opacity = "1";
+				off3.style.opacity = "1";
+				off4.style.opacity = "0";
+
+				plug1.style.opacity = "0";
+				plug2.style.opacity = "0";
+				plug3.style.opacity = "0";
+				plug4.style.opacity = "0";
+
+				on1.style.opacity = "0";
+				on2.style.opacity = "0";
+				on3.style.opacity = "0";
+				on4.style.opacity = "1";
+				
+				turn1.style.opacity = "0";
+
+				cp1.style.opacity = "0";
+				cp2.style.opacity = "0";
+				tv.style.opacity = "0";
+				tvi.style.opacity = "0";
+				fan.style.opacity = "0";
+				fff.style.opacity = "1";
+
+				mp1.style.opacity = "0";
+				mp2.style.opacity = "0";
+				mp3.style.opacity = "0";
+				mp4.style.opacity = "1";
+
+				s4.play();
+			}	
+		</script>
+
+	</div>
+</body>
+</html>
